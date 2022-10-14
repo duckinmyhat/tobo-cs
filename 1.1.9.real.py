@@ -1,5 +1,5 @@
 import turtle as t 
-#sets colors and shapes 
+# sets colors and shapes 
 shape = ["arrow","turtle","circle","square","triangle","classic"]
 color = ["magenta","indigo","orange red","yellow","medium turquoise","lime"]
 tcolor = ["sky blue","firebrick","pale green","medium turquoise","deep pink","teal"]
@@ -9,7 +9,7 @@ while True:
     for loop in range(len(shape)):
         t.speed(2)
         t.pensize(50)
-        #makes first long line and stamps at end 
+        # makes first long line and stamps at end 
         t.shape(shape[loop])
         t.pencolor(color[loop])
         t.fillcolor(tcolor[loop])
@@ -17,18 +17,18 @@ while True:
         t.penup()
         t.goto(0,0)
         t.pendown()
-        #idk if i want to show turtle
-        #t.showturtle()
+        # idk if i want to show turtle
+        # t.showturtle()
         t.left(360/len(shape))
         t.forward(50)
         t.stamp()
-        #makes second shorter line
+        # makes second shorter line
         t.hideturtle()
         t.penup()
         t.goto(0,0)
-        #t.showturtle()
+        # t.showturtle()
         t.pendown()
-        #same color as turtle for short line
+        # same color as turtle for short line
         t.pencolor(tcolor[loop])
         t.forward(15)
 
@@ -36,9 +36,9 @@ while True:
     r = -350
     t.speed(10)
     for m in range(len(color2)):
-        #every other one is on the other side   
+        # every other one is on the other side   
         if (m % 2) == 0:
-            #curve start location
+            # curve start location
             t.shape(shape[m])
             t.pencolor(color2[m])
             t.pensize(10)
@@ -49,7 +49,7 @@ while True:
             t.showturtle()
             t.pendown()
             t.circle(r,180)
-            #other half
+            # other half
             t.hideturtle()
             t.penup()
             t.goto(x,0)
@@ -60,7 +60,7 @@ while True:
 
         
         else:
-            #curve start location fpm other side
+            # curve start location fpm other side
             t.shape(shape[m])
             t.pencolor(color2[m])
             t.pensize(10)
@@ -71,7 +71,7 @@ while True:
             t.showturtle()
             t.pendown()
             t.circle(-r,180)
-            #other half
+            # other half
             t.hideturtle()
             t.penup()
             t.goto(-x,0)
@@ -87,4 +87,3 @@ while True:
    
     t.hideturtle()
     t.clear()
-
