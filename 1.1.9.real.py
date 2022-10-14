@@ -88,5 +88,3 @@ while True:
     t.hideturtle()
     t.clear()
 
-wn = t.Screen()
-wn.mainloop()
