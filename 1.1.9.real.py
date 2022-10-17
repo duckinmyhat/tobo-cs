@@ -88,4 +88,4 @@ while True:
     t.hideturtle()
     t.clear()
 
-#oh no f
+
