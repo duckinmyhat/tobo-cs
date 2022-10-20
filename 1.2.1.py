@@ -9,6 +9,11 @@ turtle_shape = 'turtle'
 turtle_size = 5
 score = 0
 
+score_height = 20
+score_width = 50
+score_x = 200 - 0.5 * score_width
+score_y = 150 -0.5 * score_height
+
 wn = trt.Screen()
 wn.setup(height = 401, width = 301)
 #-----initialize turtle-----
