@@ -10,7 +10,7 @@ turtle_size = 5
 score = 0
 
 wn = trt.Screen()
-wn.setup(height = 1.0, width = 1.0)
+wn.setup(height = 401, width = 301)
 #-----initialize turtle-----
 wack_me = trt.Turtle()
 wack_me.turtlesize(turtle_size)
