@@ -21,12 +21,13 @@ wack_me.penup()
 #-----game functions--------
 def wack_me_clicked(xpos, yPos):
     #tutke mouse click event handler 
-    print("you clicked the turtle, you turtle cliker!")
+    #print("you clicked the turtle, you turtle cliker!")
+    change_position()
 
 def change_position():
     #new xy cordenets
     new_x_pos = rnd.randint(-200,200)
-    new_Y_pos = rand.randint(-150,150)
+    new_Y_pos = rnd.randint(-150,150)
 
     #move turt
     wack_me.goto(new_x_pos, new_Y_pos)
