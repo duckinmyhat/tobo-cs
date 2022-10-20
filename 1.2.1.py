@@ -7,6 +7,7 @@ import random as rnd
 turtke_color = 'yellow'
 turtle_shape = 'turtle'
 turtle_size = 5
+score = 0
 
 wn = trt.Screen()
 wn.setup(height = 1.0, width = 1.0)
@@ -19,10 +20,18 @@ wack_me.penup()
 
 
 #-----game functions--------
+def update_score():
+    global score #golabal svore 
+    score += 1 #incrase score by 1
+    print(score)
+
 def wack_me_clicked(xpos, yPos):
     #tutke mouse click event handler 
     #print("you clicked the turtle, you turtle cliker!")
     change_position()
+    update_score()
+
+
 
 def change_position():
     #new xy cordenets
