@@ -14,7 +14,7 @@ timer_up = False
 turtle_color = 'pink'
 turtle_shape = 'turtle'
 turtle_size = 5
-score = 9
+score = 0
 
 game_height = 300
 game_width = 400
