@@ -9,6 +9,8 @@ turtle_shape = 'turtle'
 turtle_size = 5
 score = 0
 
+game_hight = 300
+game_width = 400
 score_height = 20
 score_width = 50
 score_x = 200 - 0.5 * score_width
