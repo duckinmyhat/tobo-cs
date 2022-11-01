@@ -9,7 +9,7 @@ timer = 30
 counter_interval = 1000   #1000 represents 1 second
 timer_up = False
 
-open("a122_leaderboard.txt","w")
+
 
 #-----game configuration----
 turtle_color = 'pink'
