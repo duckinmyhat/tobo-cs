@@ -2,13 +2,14 @@
 import turtle as trt
 import random as rnd
 
+
 #-----countdown variables-----
 font_setup = ("Arial", 20, "normal")
 timer = 30
 counter_interval = 1000   #1000 represents 1 second
 timer_up = False
 
-
+open("a122_leaderboard.txt","w")
 
 #-----game configuration----
 turtle_color = 'pink'
@@ -22,6 +23,8 @@ score_height = 20
 score_width = 50
 score_x = game_width/2 - 0.5 * score_width - 20
 score_y = game_height/2 - 0.5 * score_height - 25
+time_x = -game_width/2 - 0.5 * score_width + 40
+time_y = game_height/2 - 0.5 * score_height  - 25
 
 wn = trt.Screen()
 wn.setup(height = game_height + 20, width = game_width + 20)
@@ -38,12 +41,16 @@ score_writer.hideturtle()
 score_writer.penup()
 score_writer.goto(score_x, score_y)
 
+counter =  trt.Turtle()
+counter.hideturtle()
+counter.penup()
+counter.goto(time_x,time_y)
+
 boxer = trt.Turtle()
 boxer.hideturtle()
 boxer.penup()
 
 #-----countdown writer-----
-counter =  trt.Turtle()
 
 #-----game functions--------
 def countdown():
@@ -52,6 +59,7 @@ def countdown():
   if timer <= 0:
     counter.write("Time's Up", font=font_setup)
     timer_up = True
+    whack_me.hideturtle()
   else:
     counter.write("Timer: " + str(timer), font=font_setup)
     timer -= 1
