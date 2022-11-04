@@ -10,8 +10,8 @@ counter_interval = 1000   #1000 represents 1 second
 timer_up = False
 #name call
 
-open("a122_leaderboard.txt","w")
-leaderboard_file_name = input('what is your name')
+#open("a122_leaderboard.txt","w")
+#leaderboard_file_name = input('what is your name')
 #-----game configuration----
 turtle_color = 'pink'
 turtle_shape = 'turtle'
