@@ -1,6 +1,7 @@
 #-----import statements-----
 import turtle as trt
 import random as rnd
+import leaderboard as lb
 
 
 #-----countdown variables-----
@@ -10,8 +11,9 @@ counter_interval = 1000   #1000 represents 1 second
 timer_up = False
 #name call
 
-#open("a122_leaderboard.txt","w")
-#leaderboard_file_name = input('what is your name')
+# leaderboard variables
+leaderboard_file_name = "a122_leaderboard.txt"
+player_name = input('what is your name\n')
 #-----game configuration----
 turtle_color = 'pink'
 turtle_shape = 'turtle'
