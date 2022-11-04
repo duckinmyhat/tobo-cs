@@ -1,7 +1,7 @@
 #-----import statements-----
 import turtle as trt
 import random as rnd
-#import leaderboard as lb
+import leaderboard as lb
 
 
 #-----countdown variables-----
