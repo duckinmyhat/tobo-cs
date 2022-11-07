@@ -18,6 +18,11 @@ player_name = input('what is your name\n')
 # Add this function to your game code
 
 # manages the leaderboard for top 5 scorers
+
+spot = trt.Turtle()
+spot.hideturtle()
+
+
 def manage_leaderboard():
 
   global score
@@ -34,6 +39,8 @@ def manage_leaderboard():
 
   else:
     lb.draw_leaderboard(False, leader_names_list, leader_scores_list, spot, score)
+
+
 
 #-----game configuration----
 turtle_color = 'pink'
