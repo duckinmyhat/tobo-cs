@@ -1,4 +1,5 @@
 import turtle as t 
+
 x = 0
 t.left(90)
 for p in range (17):
