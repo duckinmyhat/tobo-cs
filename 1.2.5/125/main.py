@@ -32,20 +32,23 @@ def jump():
   t.goto((t.pos()) + (0,25))
   # Move sprite forward 30 pixels
   t.forward(30)
-  # Return sprite to original position
+  # Return sprite to original position after foward 30
   t.goto((t.pos()) - (0,25))
-
 
 
 # Bind the movement functions to the WASD keys
 wn.onkeypress(move_forward, "d")
 wn.onkeypress(move_backward, "a")
-
 wn.onkeypress(jump, "w")
 
 # Start listening for key events
 wn.listen()
 
+#brakes wn.listen
+#spike
+#while(True):
+#  print('loop')
+#  if (t.pos() == -380):
+#   print("you win")
 
-wn.mainloop()
 wn.mainloop()
