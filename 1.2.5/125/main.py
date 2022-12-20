@@ -14,6 +14,9 @@ t.penup()
 # Set starting position for sprite
 t.goto(-490,-190)
 
+#def spike():
+# 
+
 # Define movement functions
 def move_forward():
   # Move sprite forward 10 pixels

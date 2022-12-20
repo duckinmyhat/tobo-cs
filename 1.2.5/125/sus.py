@@ -12,10 +12,11 @@ t.shape(sprite)
 t.penup()
 
 # Set starting position for sprite
-t.goto((-380.00,-190.00))
+t.goto(-490,-190)
 
 # Create spike turtle
 spike = t.Turtle()
+spike.penup()
 spike.shape("square")
 spike.color("red")
 
@@ -24,16 +25,26 @@ spike.goto(-100, -190)
 
 # Create pit turtle
 pit = t.Turtle()
+pit.penup()
 pit.shape("circle")
 pit.color("blue")
 
 # Move pit to desired position
-pit.goto(100, -190)
-
+pit.goto(-380.00,-190.00)
+print(pit.pos())
 # Define movement functions
 def move_forward():
   # Move sprite forward 10 pixels
   t.forward(10)
+  print(t.pos())
+
+  if abs(t.distance(spike)) < 20:
+    print('hit')
+
+  # Check if sprite is colliding with a pit
+  if abs(t.distance(pit)) < 20:
+    print('hit')
+  
 
 
 def move_backward():
@@ -62,20 +73,7 @@ wn.onkeypress(jump, "w")
 wn.listen()
 
 
-# Define function to perform collision detection
-def collision_detection():
-  # Check if sprite is colliding with a spike
-  if t.distance(spike) < 20:
-    # Move sprite to position just beyond the spike
-    t.goto(spike.x + 30, t.y)
 
-  # Check if sprite is colliding with a pit
-  if t.distance(pit) < 20:
-    # Move sprite to position just beyond the pit
-    t.goto(pit.x - 30, t.y)
-
-# Run collision detection every 100 milliseconds
-wn.ontimer(collision_detection, 100)
 
 wn.mainloop()
 
