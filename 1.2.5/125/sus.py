@@ -12,7 +12,7 @@ t.shape(sprite)
 t.penup()
 
 # Set starting position for sprite
-t.goto(-490,-190)
+t.goto((-380.00,-190.00))
 
 # Create spike turtle
 spike = t.Turtle()
@@ -20,7 +20,7 @@ spike.shape("square")
 spike.color("red")
 
 # Move spike to desired position
-spike.goto(-100, -200)
+spike.goto(-100, -190)
 
 # Create pit turtle
 pit = t.Turtle()
@@ -28,7 +28,7 @@ pit.shape("circle")
 pit.color("blue")
 
 # Move pit to desired position
-pit.goto(100, -200)
+pit.goto(100, -190)
 
 # Define movement functions
 def move_forward():
