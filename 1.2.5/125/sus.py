@@ -38,11 +38,11 @@ def move_forward():
   t.forward(10)
   print(t.pos())
 
-  if abs(t.distance(spike)) < 20:
+  if abs(t.distance(spike)) < 10:
     print('hit')
 
   # Check if sprite is colliding with a pit
-  if abs(t.distance(pit)) < 20:
+  if abs(t.distance(pit)) < 10:
     print('hit')
   
 
